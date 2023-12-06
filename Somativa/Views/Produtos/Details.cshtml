@@ -1,0 +1,51 @@
+﻿@model Somativa.Models.Produto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h1 class="cabecario fw-lighter" style="font-size: 50px; margin-bottom: 0;">detalhes</h1>
+<h4 class="cabecario">Produtos</h4>
+<div style="display: flex;justify-content: center;">
+    <hr />
+    <div class="card text-black" style="width: 300px;">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Nome)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Nome)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Estoque)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Estoque)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Preco)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Preco)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Categoria)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Categoria.Nome)
+                </dd>
+                <dt class="col-sm-5">
+                    @Html.DisplayNameFor(model => model.Fornecedor)
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.Fornecedor.Nome)
+                </dd>
+            </dl>
+            <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model?.ProdutoId">Editar</a>
+            <a class="btn btn-secondary" asp-action="Index">Voltar</a>
+        </div>
+    </div>
+
+</div>

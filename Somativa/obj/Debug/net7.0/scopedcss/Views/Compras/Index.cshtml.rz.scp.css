@@ -1,0 +1,17 @@
+body[b-isnz1wiyz2] {
+}
+
+.cabecario[b-isnz1wiyz2] {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btnADD[b-isnz1wiyz2] {
+    display: flex;
+    justify-content: center;
+}

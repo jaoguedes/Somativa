@@ -1,0 +1,17 @@
+body[b-ccvmzriudi] {
+}
+
+.cabecario[b-ccvmzriudi] {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btnADD[b-ccvmzriudi] {
+    display: flex;
+    justify-content: center;
+}

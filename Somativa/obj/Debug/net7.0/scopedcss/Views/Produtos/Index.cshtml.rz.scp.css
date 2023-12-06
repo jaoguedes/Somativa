@@ -1,0 +1,73 @@
+body[b-wq5ekzpzs8] {
+}
+
+.container[b-wq5ekzpzs8] {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.card[b-wq5ekzpzs8] {
+    border-radius: 15px;
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    width: 331px;
+    height: 340px;
+    margin-right: 20px;
+}
+
+.cabecario[b-wq5ekzpzs8] {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nome[b-wq5ekzpzs8] {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 26px;
+}
+
+.preco[b-wq5ekzpzs8] {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.bAction[b-wq5ekzpzs8] {
+    display: flex;
+    flex-direction: row;
+}
+
+.categoria[b-wq5ekzpzs8] {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.fornecedor[b-wq5ekzpzs8] {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.btnADD[b-wq5ekzpzs8] {
+    display: flex;
+    justify-content: center;
+}

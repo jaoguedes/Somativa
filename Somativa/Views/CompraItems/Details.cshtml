@@ -1,0 +1,45 @@
+﻿@model Somativa.Models.CompraItem
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h1 class="cabecario fw-lighter" style="font-size: 50px; margin-bottom: 0;">detalhes</h1>
+<h4 class="cabecario">Item de Compra</h4>
+<div style="display: flex;justify-content: center;">
+    <hr />
+    <div class="card text-black" style="width: 300px;">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Compra)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Compra.Nota)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Produto)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Produto.Nome)
+                </dd>
+                <dt class="col-sm-5">
+                    @Html.DisplayNameFor(model => model.Quantidade)
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.Quantidade)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Unitario)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Unitario)
+                </dd>
+            </dl>
+            <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model?.CompraItemId">Editar</a>
+            <a class="btn btn-secondary" asp-action="Index">Voltar</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Somativa</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Somativa.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary navColor">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#"><img src="~/img/Garb black.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <svg bootstrap-icon="List" width="50" height="50" aria-label="Curtir" class=""></svg>
+                </button>
+                <div class="offcanvas offcanvas-end colorSec" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel"><img src="~/img/Garb black.png" /></h5>
+                        <button type="button" class="btn-close text-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body colorSec">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Fornecedores" asp-action="Index">Fornecedores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Categorias" asp-action="Index">Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Produtos" asp-action="Index">Produtos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Vendas" asp-action="Index">Vendas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Compras" asp-action="Index">Compras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Relatorio" asp-action="RelatProd">Relatório de produtos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Relatorio" asp-action="RelatMov">Relatório de movimentações</a>
+                            </li>
+                        </ul>
+                        <partial name="_LoginPartial" />
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <div class="altFooter">
+        <div class="insideFooter">
+            <div class="textOne">
+                No ritmo da sua vida, <img class="imgGrabWhite" src="~/img/grab with.png" />
+            </div>
+            <div class="textTwo">
+                entrega a conveniência que você merece
+            </div>
+        </div>
+        <div class="navFooter">
+            <ul class="navbar-nav footer-nav flex-grow-1">
+                <li class="nav-item linkOne">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Contato</a>
+                </li>
+                <li class="nav-item linkTwo">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Clientes" asp-action="Index">Cardápio</a>
+                </li>
+                <li class="nav-item linkTree">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Fornecedores" asp-action="Index">Fornecedores</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer text-muted">
+        <div class="container">
+            Copyright© 2023 GRAB - Todos os direitos reservados
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

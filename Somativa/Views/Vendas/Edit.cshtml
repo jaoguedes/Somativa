@@ -1,0 +1,41 @@
+﻿@model Somativa.Models.Venda
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="cabecario fw-lighter" style="font-size: 50px; margin-bottom: 0;">editar</h1>
+<h4 class="cabecario">Venda</h4>
+<hr />
+<div class="row" style="justify-content: center;">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="VendaId" />
+            <div class="form-floating mb-3">
+                <input asp-for="Nota" class="form-control" placeholder=" " />
+                <label asp-for="Nota" class="control-label text-dark"></label>
+                <span asp-validation-for="Nota" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.ClienteId"></select>
+                <label asp-for="ClienteId" class="control-label text-dark"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="DataHora" class="form-control" placeholder=" " />
+                <label asp-for="DataHora" class="control-label text-dark"></label>
+                <span asp-validation-for="DataHora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Criar" class="btn btn-primary" />
+                <a class="btn btn-secondary" asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

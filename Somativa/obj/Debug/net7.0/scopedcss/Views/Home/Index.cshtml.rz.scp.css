@@ -1,0 +1,85 @@
+body[b-l7p8t6grqg] {
+}
+
+.grabApresent[b-l7p8t6grqg] {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(50% 50% at 50% 50%, #2F2D2D 0%, #171717 100%);
+}
+
+.int[b-l7p8t6grqg] {
+    align-items: start;
+}
+
+.textOla[b-l7p8t6grqg] {
+    display: flex;
+    align-items: center
+}
+
+h1[b-l7p8t6grqg] {
+    font-size: 34px;
+    color: white;
+    font-family: Inter;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+h2[b-l7p8t6grqg] {
+    font-size: 50px;
+    margin: 0;
+    font-family: Inter;
+    color: white;
+    align-self: flex-end;
+}
+
+.cardApresent[b-l7p8t6grqg] {
+    display: flex;
+}
+
+.imgMid[b-l7p8t6grqg] {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textMid[b-l7p8t6grqg] {
+    width: 50%;
+    font-size: 25px;
+    font-family: Inter;
+    color: white;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.cardapio[b-l7p8t6grqg] {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(50% 50% at 50% 50%, #2F2D2D 0%, #171717 100%);
+}
+
+.topCardapio[b-l7p8t6grqg] {
+    margin: 0;
+    font-family: Inter;
+    color: white;
+}
+
+h3[b-l7p8t6grqg] {
+    font-size: 50px;
+}
+
+.imgCardapio[b-l7p8t6grqg] {
+    width: 50px;
+    height: 50px;
+}

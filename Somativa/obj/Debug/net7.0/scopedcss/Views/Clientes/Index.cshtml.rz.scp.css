@@ -1,0 +1,40 @@
+body[b-zyalhll1wz] {
+}
+
+
+.container[b-zyalhll1wz] {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.card[b-zyalhll1wz] {
+    border-radius: 15px;
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    width: 381px;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.cabecario[b-zyalhll1wz] {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nome[b-zyalhll1wz] {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 26px;
+}

@@ -1,0 +1,131 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-l0aq3zqe55] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-l0aq3zqe55] {
+  color: #0077cc;
+}
+
+.btn-primary[b-l0aq3zqe55] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-l0aq3zqe55], .nav-pills .show > .nav-link[b-l0aq3zqe55] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-l0aq3zqe55] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-l0aq3zqe55] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-l0aq3zqe55] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-l0aq3zqe55] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-l0aq3zqe55] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background: #D9D9D9;
+    height: 95px;
+    display:flex;
+    align-items: center;
+    color: #311260;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navColor[b-l0aq3zqe55] {
+    background: linear-gradient(270deg, #FFF -1.55%, #2EF998 -1.54%, #54B07F 103.11%);
+}
+
+.altFooter[b-l0aq3zqe55] {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(275deg, #32F195 0%, #418E5A 98.83%);
+    height: 359px;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+.imgGrabWhite[b-l0aq3zqe55] {
+    grab1 3 grab1. png width: 135px;
+    height: 52px;
+    flex-shrink: 0;
+}
+
+.textOne[b-l0aq3zqe55] {
+    color: #FFF;
+    text-align: center;
+    font-family: Judson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+
+}
+
+.textTwo[b-l0aq3zqe55] {
+    color: #FFF;
+    text-align: center;
+    font-family: Judson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.insideFooter[b-l0aq3zqe55] {
+    width: 50%;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navFooter[b-l0aq3zqe55] {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 264px;
+}
+
+.linkOne[b-l0aq3zqe55], .linkTwo[b-l0aq3zqe55], .linkTree[b-l0aq3zqe55] {
+    color: #FFF;
+    text-align: center;
+    font-family: Judson;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
