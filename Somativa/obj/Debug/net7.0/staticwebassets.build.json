@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MdUjO4bNfGeo/w7h3RHFAQkkEOGfIPT5f53fxwR/6hs=",
+  "Hash": "COdGdBrGGGv1velU45KSFUAm9Ct2Erc3eRmTN8j9cZk=",
   "Source": "Somativa",
   "BasePath": "_content/Somativa",
   "Mode": "Default",
@@ -1902,6 +1902,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\grab with.png"
+    },
+    {
+      "Identity": "C:\\Users\\Aluno\\OneDrive - SESISENAISP - Escolas\\Área de Trabalho\\Somativa\\Somativa\\wwwroot\\img\\Rectangle 1.png",
+      "SourceId": "Somativa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Aluno\\OneDrive - SESISENAISP - Escolas\\Área de Trabalho\\Somativa\\Somativa\\wwwroot\\",
+      "BasePath": "_content/Somativa",
+      "RelativePath": "img/Rectangle 1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Rectangle 1.png"
     },
     {
       "Identity": "C:\\Users\\Aluno\\OneDrive - SESISENAISP - Escolas\\Área de Trabalho\\Somativa\\Somativa\\wwwroot\\img\\Rectangle 19.png",
