@@ -129,3 +129,30 @@ button.accept-policy[b-l0aq3zqe55] {
     text-decoration-line: underline;
 }
 
+@media (max-width: 768px) {
+    .altFooter[b-l0aq3zqe55] {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .insideFooter[b-l0aq3zqe55], .navFooter[b-l0aq3zqe55] {
+        width: 100%;
+    }
+
+    .textOne[b-l0aq3zqe55], .textTwo[b-l0aq3zqe55], .linkOne[b-l0aq3zqe55], .linkTwo[b-l0aq3zqe55], .linkTree[b-l0aq3zqe55] {
+        font-size: 18px;
+    }
+
+    .imgGrabWhite[b-l0aq3zqe55] {
+        width: 100px;
+        height: 39px;
+    }
+
+    .footer[b-l0aq3zqe55] {
+        position: relative;
+        bottom: auto;
+        width: 100%;
+        height: auto;
+        line-height: 30px;
+    }
+}

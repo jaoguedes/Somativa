@@ -129,3 +129,30 @@ button.accept-policy {
     text-decoration-line: underline;
 }
 
+@media (max-width: 768px) {
+    .altFooter {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .insideFooter, .navFooter {
+        width: 100%;
+    }
+
+    .textOne, .textTwo, .linkOne, .linkTwo, .linkTree {
+        font-size: 18px;
+    }
+
+    .imgGrabWhite {
+        width: 100px;
+        height: 39px;
+    }
+
+    .footer {
+        position: relative;
+        bottom: auto;
+        width: 100%;
+        height: auto;
+        line-height: 30px;
+    }
+}

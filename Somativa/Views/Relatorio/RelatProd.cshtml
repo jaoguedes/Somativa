@@ -1,81 +1,83 @@
 ﻿@model IEnumerable<Somativa.Models.Produto>
 
 @{
-	ViewData["Title"] = "RelatProd";
+    ViewData["Title"] = "RelatProd";
 
-	List<Categoria> categorias = new List<Categoria>();
-	categorias.Add(new Categoria { CategoriaId=new Guid(), Nome="Todas" });
-	var categ = ViewData["Categ"] as List<Categoria>;
+    List<Categoria> categorias = new List<Categoria>();
+    categorias.Add(new Categoria { CategoriaId = new Guid(), Nome = "Todas" });
+    var categ = ViewData["Categ"] as List<Categoria>;
 
-	foreach (var item in categ)
-	{
-		categorias.Add(new Categoria { CategoriaId = item.CategoriaId, Nome = item.Nome });
-	}
+    foreach (var item in categ)
+    {
+        categorias.Add(new Categoria { CategoriaId = item.CategoriaId, Nome = item.Nome });
+    }
 }
+<div style="height: 100vh; background: radial-gradient(50% 50% at 50% 50%, #2F2D2D 0%, #171717 100%); ">
+    <div class="cabecario mt-3">Relatorio de Produtos</div>
 
-<div class="cabecario mt-3">Relatorio de Produtos</div>
+    <!--
+    <img src="@Url.Action("GetImage", "Relatorio", new { imageName = "imagem.png" })" alt="Descrição da imagem">
+    -->
+    <form>
 
-<!--
-<img src="@Url.Action("GetImage", "Relatorio", new { imageName = "imagem.png" })" alt="Descrição da imagem">
--->
-<form>
+        <div id="filtros" class="row mx-2">
+            <div class="form-floating mb-3 col-6">
+                <select name="inCategoria" class="form-control">
+                    @foreach (var item in categorias)
+                    {
+                        <option value="@item.CategoriaId">@item.Nome</option>
+                    }
+                </select>
+                <label for="inCategoria" class="control-label text-dark col-12">Categoria:</label>
+            </div>
+            <div class="form-floating mb-3 col-6">
+                <input name="inNome" class="form-control"
+                       placeholder=" " />
+                <label for="inNome" class="form-label text-dark">Nome:</label>
+            </div>
 
-	<div id="filtros" class="row mx-2">
-		<div class="form-floating mb-3 col-6">
-			<select name="inCategoria" class="form-control">
-				@foreach (var item in categorias)
-				{
-					<option value="@item.CategoriaId">@item.Nome</option>
-				}
-			</select>
-			<label for="inCategoria" class="control-label text-dark col-12">Categoria:</label>
-		</div>
-		<div class="form-floating mb-3 col-6">
-			<input name="inNome" class="form-control"
-				   placeholder=" " />
-			<label for="inNome" class="form-label text-dark">Nome:</label>
-		</div>
-		
-		<button asp-action="SearchProd" class="btn btn-success col-12">Filtrar</button>
-	</div>
-</form>
+            <button asp-action="SearchProd" class="btn btn-success col-12">Filtrar</button>
+        </div>
+    </form>
 
-<table class="table table-dark text-light mt-3">
-	<thead>
-		<tr>
-			<th>
-				@Html.DisplayNameFor(model => model.Nome)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Categoria.Nome)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Estoque)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Preco)
-			</th>
+    <table class="table table-dark text-light mt-3">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Categoria.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Estoque)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Preco)
+                </th>
 
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (var item in Model)
-		{
-			<tr>
-				<td>
-					@Html.DisplayFor(modelItem => item.Nome)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Categoria.Nome)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Estoque)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Preco)
-				</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Categoria.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estoque)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Preco)
+                    </td>
 
-			</tr>
-		}
-	</tbody>
-</table>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

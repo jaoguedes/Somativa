@@ -2,12 +2,12 @@
 @using Microsoft.AspNetCore.Http.Features
 @model TwoFactorAuthenticationModel
 @{
-    ViewData["Title"] = "Autenticação de dois fatores";
+    ViewData["Title"] = "AUTENTICAÇÃO DE DOIS FATORES";
     ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
 }
 
 <partial name="_StatusMessage" for="StatusMessage" />
-<h3>@ViewData["Title"]</h3>
+<h3 style="display: flex;justify-content: center;color: white;font-weight: bold;" class="mb-4">@ViewData["Title"]</h3>
 @{
     var consentFeature = HttpContext.Features.Get<ITrackingConsentFeature>();
     @if (consentFeature?.CanTrack ?? true)
@@ -16,21 +16,21 @@
         {
             if (Model.RecoveryCodesLeft == 0)
             {
-                <div class="alert alert-danger">
+                <div class="alert alert-danger" style="display: flex; flex-direction: column;justify-content: center; align-content: center;">
                     <strong>You have no recovery codes left.</strong>
                     <p>You must <a asp-page="./GenerateRecoveryCodes">generate a new set of recovery codes</a> before you can log in with a recovery code.</p>
                 </div>
             }
             else if (Model.RecoveryCodesLeft == 1)
             {
-                <div class="alert alert-danger">
+                <div class="alert alert-danger" style="display: flex; flex-direction: column;justify-content: center; align-content: center;">
                     <strong>You have 1 recovery code left.</strong>
                     <p>You can <a asp-page="./GenerateRecoveryCodes">generate a new set of recovery codes</a>.</p>
                 </div>
             }
             else if (Model.RecoveryCodesLeft <= 3)
             {
-                <div class="alert alert-warning">
+                <div class="alert alert-warning" style="display: flex; flex-direction: column;justify-content: center; align-content: center;">
                     <strong>You have @Model.RecoveryCodesLeft recovery codes left.</strong>
                     <p>You should <a asp-page="./GenerateRecoveryCodes">generate a new set of recovery codes</a>.</p>
                 </div>
@@ -38,7 +38,7 @@
 
             if (Model.IsMachineRemembered)
             {
-                <form method="post" style="display: inline-block">
+                <form method="post" style="display: inline-block" >
                     <button type="submit" class="btn btn-primary">Forget this browser</button>
                 </form>
             }

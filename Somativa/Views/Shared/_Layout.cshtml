@@ -13,9 +13,14 @@
         <nav class="navbar bg-body-tertiary navColor">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold" href="#"><img src="~/img/Garb black.png" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <svg bootstrap-icon="List" width="50" height="50" aria-label="Curtir" class=""></svg>
-                </button>
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <partial name="_LoginPartialIcone" />
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <svg bootstrap-icon="List" width="50" height="50" aria-label="Curtir" class=""></svg>
+                    </button>
+                </div>
+              
+
                 <div class="offcanvas offcanvas-end colorSec" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel"><img src="~/img/Garb black.png" /></h5>
@@ -36,7 +41,7 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Categorias" asp-action="Index">Categorias</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Produtos" asp-action="Index">Produtos</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Produtos" asp-action="Index">Cardápio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Vendas" asp-action="Index">Vendas</a>
@@ -51,8 +56,9 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Relatorio" asp-action="RelatMov">Relatório de movimentações</a>
                             </li>
                         </ul>
-                        <partial name="_LoginPartial" />
-                    </div>
+                       
+                    </div> 
+                    <partial name="_LoginPartial" />
                 </div>
         </nav>
     </header>
@@ -73,10 +79,10 @@
         <div class="navFooter">
             <ul class="navbar-nav footer-nav flex-grow-1">
                 <li class="nav-item linkOne">
-                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Contato</a>
+                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Contato</a>
                 </li>
                 <li class="nav-item linkTwo">
-                    <a class="nav-link text-white" asp-area="" asp-controller="Clientes" asp-action="Index">Cardápio</a>
+                    <a class="nav-link text-white" asp-area="" asp-controller="Produtos" asp-action="Index">Cardápio</a>
                 </li>
                 <li class="nav-item linkTree">
                     <a class="nav-link text-white" asp-area="" asp-controller="Fornecedores" asp-action="Index">Fornecedores</a>

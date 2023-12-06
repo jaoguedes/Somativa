@@ -1,4 +1,6 @@
 ﻿body {
+    margin: 0;
+    padding: 0;
 }
 
 .grabApresent {
@@ -8,6 +10,8 @@
     align-items: center;
     justify-content: center;
     background: radial-gradient(50% 50% at 50% 50%, #2F2D2D 0%, #171717 100%);
+    color: white;
+    margin-bottom: 20px;
 }
 
 .int {
@@ -16,7 +20,7 @@
 
 .textOla {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 h1 {
@@ -38,24 +42,23 @@ h2 {
 
 .cardApresent {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .imgMid {
-    width: 50%;
+    width: 100%; /* Alterado para ocupar a largura total em telas menores */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px; /* Adicionado um espaçamento entre a imagem e o texto */
 }
 
 .textMid {
-    width: 50%;
+    width: 100%; /* Alterado para ocupar a largura total em telas menores */
     font-size: 25px;
     font-family: Inter;
     color: white;
-    margin-right: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -66,13 +69,14 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(50% 50% at 50% 50%, #2F2D2D 0%, #171717 100%);
+    height: auto;
 }
 
 .topCardapio {
     margin: 0;
     font-family: Inter;
     color: white;
+    margin-top: 20px;
 }
 
 h3 {
@@ -82,4 +86,22 @@ h3 {
 .imgCardapio {
     width: 50px;
     height: 50px;
+}
+
+@media (min-width: 768px) {
+    /* Aplicar estilos para telas maiores que 768px se necessário */
+    .imgMid {
+        width: 50%;
+        margin-bottom: 0; /* Removido o espaçamento para telas maiores */
+    }
+
+    .textMid {
+        width: 50%;
+    }
+}
+
+/* Adicionando responsividade às imagens dentro da seção "cardapio" */
+.cardapio img {
+    max-width: 100%;
+    height: auto;
 }

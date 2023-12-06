@@ -9,16 +9,16 @@
     }
 }
 
-<h1 class="cabecario">Gerencie sua conta</h1>
+<h1 class="cabecario mt-5 mb-3">Gerencie sua conta</h1>
 
-<div>
+<div style="height: 100vh;  background: radial-gradient(50% 50% at 50% 50%, #2F2D2D 0%, #171717 100%);">
     <h2 style="font-weight: bolder;font-size: 40px;display: flex; justify-content:center;" class="text-white">Alterar as configurações da sua conta</h2>
     <hr />
-    <div class="flex-column">
+    <div class="flex-column mb-5">
         <div class="col-md-3 w-100">
             <partial name="_ManageNav" />
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 w-100" style="display: flex;justify-content: center; flex-direction: column; align-content: center;">
             @RenderBody()
         </div>
     </div>

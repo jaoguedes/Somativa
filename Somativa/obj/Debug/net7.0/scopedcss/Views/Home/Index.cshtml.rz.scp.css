@@ -1,4 +1,6 @@
 body[b-l7p8t6grqg] {
+    margin: 0;
+    padding: 0;
 }
 
 .grabApresent[b-l7p8t6grqg] {
@@ -8,6 +10,8 @@ body[b-l7p8t6grqg] {
     align-items: center;
     justify-content: center;
     background: radial-gradient(50% 50% at 50% 50%, #2F2D2D 0%, #171717 100%);
+    color: white;
+    margin-bottom: 20px;
 }
 
 .int[b-l7p8t6grqg] {
@@ -16,7 +20,7 @@ body[b-l7p8t6grqg] {
 
 .textOla[b-l7p8t6grqg] {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 h1[b-l7p8t6grqg] {
@@ -38,24 +42,23 @@ h2[b-l7p8t6grqg] {
 
 .cardApresent[b-l7p8t6grqg] {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .imgMid[b-l7p8t6grqg] {
-    width: 50%;
+    width: 100%; /* Alterado para ocupar a largura total em telas menores */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px; /* Adicionado um espaçamento entre a imagem e o texto */
 }
 
 .textMid[b-l7p8t6grqg] {
-    width: 50%;
+    width: 100%; /* Alterado para ocupar a largura total em telas menores */
     font-size: 25px;
     font-family: Inter;
     color: white;
-    margin-right: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -66,13 +69,14 @@ h2[b-l7p8t6grqg] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(50% 50% at 50% 50%, #2F2D2D 0%, #171717 100%);
+    height: auto;
 }
 
 .topCardapio[b-l7p8t6grqg] {
     margin: 0;
     font-family: Inter;
     color: white;
+    margin-top: 20px;
 }
 
 h3[b-l7p8t6grqg] {
@@ -82,4 +86,22 @@ h3[b-l7p8t6grqg] {
 .imgCardapio[b-l7p8t6grqg] {
     width: 50px;
     height: 50px;
+}
+
+@media (min-width: 768px) {
+    /* Aplicar estilos para telas maiores que 768px se necessário */
+    .imgMid[b-l7p8t6grqg] {
+        width: 50%;
+        margin-bottom: 0; /* Removido o espaçamento para telas maiores */
+    }
+
+    .textMid[b-l7p8t6grqg] {
+        width: 50%;
+    }
+}
+
+/* Adicionando responsividade às imagens dentro da seção "cardapio" */
+.cardapio img[b-l7p8t6grqg] {
+    max-width: 100%;
+    height: auto;
 }
