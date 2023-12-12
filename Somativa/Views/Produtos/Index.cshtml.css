@@ -1,13 +1,12 @@
-﻿body {
-}
-
-.container {
+﻿.container {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-
-
+.btnADD {
+    display: flex;
+    justify-content: center;
+}
 .card {
     border-radius: 15px;
     background: #D9D9D9;
@@ -16,58 +15,46 @@
     width: 331px;
     height: 340px;
     margin-right: 20px;
+    overflow: hidden;
 }
 
-.cabecario {
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.image-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    width: 331px;
+    height: 101px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 16px;
 }
 
 .nome {
     color: #000;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     font-size: 26px;
+    font-weight: 700;
 }
 
 .preco {
     color: #000;
     font-size: 24px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
+}
+
+.categoria,
+.fornecedor {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .bAction {
     display: flex;
-    flex-direction: row;
-}
-
-.categoria {
-    color: #000;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.fornecedor {
-    color: #000;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-
-.btnADD {
-    display: flex;
-    justify-content: center;
+    gap: 8px;
+    margin-top: auto;
 }

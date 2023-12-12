@@ -20,5 +20,7 @@ namespace Somativa.Models
         [DisplayName("Fornecedor")]
         public Guid FornecedorId { get; set; } 
         public Fornecedor? Fornecedor { get; set; }
+
+        public string? Imagem { get; set; }
     }
 }

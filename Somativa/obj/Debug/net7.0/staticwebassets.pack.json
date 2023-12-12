@@ -465,6 +465,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Aluno\\OneDrive - SESISENAISP - Escolas\\Área de Trabalho\\Somativa\\Somativa\\wwwroot\\uploads\\f0bf586c-92b7-4e90-9059-14bd246804c2_eye.png",
+      "PackagePath": "staticwebassets\\uploads\\f0bf586c-92b7-4e90-9059-14bd246804c2_eye.png"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Somativa.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
