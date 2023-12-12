@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BesFsQDUYvl7M7YUFzPQHp3BR7Jpt4UBlv8VZvRKe6I=",
+  "Hash": "Ai50MZaAUn80uZsG0wBvHcelHMBxdmiMmJYdeHaIiQw=",
   "Source": "Somativa",
   "BasePath": "_content/Somativa",
   "Mode": "Default",
@@ -3024,6 +3024,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Aluno\\OneDrive - SESISENAISP - Escolas\\Área de Trabalho\\Somativa\\Somativa\\wwwroot\\uploads\\f0bf586c-92b7-4e90-9059-14bd246804c2_eye.png",
+      "SourceId": "Somativa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Aluno\\OneDrive - SESISENAISP - Escolas\\Área de Trabalho\\Somativa\\Somativa\\wwwroot\\",
+      "BasePath": "_content/Somativa",
+      "RelativePath": "uploads/f0bf586c-92b7-4e90-9059-14bd246804c2_eye.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f0bf586c-92b7-4e90-9059-14bd246804c2_eye.png"
     }
   ]
 }
